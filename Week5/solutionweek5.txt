@@ -56,7 +56,7 @@ CSV file 'student.csv' created successfully.
 # Read and print records from student.csv file
 with open("student.csv", mode="r") as file:
     reader = csv.reader(file)
-    for row in reader:
+    for record in reader:
         print(", ".join(row))
 
 sid, sname, city, contact
